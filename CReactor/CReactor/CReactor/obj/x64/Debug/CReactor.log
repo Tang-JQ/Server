@@ -1,0 +1,48 @@
+﻿  正在验证源
+  正在将源远程复制到“192.168.211.128”
+  正在验证体系结构
+  正在验证体系结构
+  正在启动远程生成
+  正在编译源:
+  Buffer.c
+C:\Users\yaoti\Desktop\threadpool\CReactor\CReactor\CReactor\Buffer.c(16,3): warning : conversion to ‘size_t’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+C:\Users\yaoti\Desktop\threadpool\CReactor\CReactor\CReactor\Buffer.c(16,3): warning :    buffer->data = (char*)malloc(size);
+C:\Users\yaoti\Desktop\threadpool\CReactor\CReactor\CReactor\Buffer.c(16,3): warning :    ^
+C:\Users\yaoti\Desktop\threadpool\CReactor\CReactor\CReactor\Buffer.c(19,3): warning : conversion to ‘size_t’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+C:\Users\yaoti\Desktop\threadpool\CReactor\CReactor\CReactor\Buffer.c(19,3): warning :    memset(buffer->data, 0, size);
+C:\Users\yaoti\Desktop\threadpool\CReactor\CReactor\CReactor\Buffer.c(19,3): warning :    ^
+C:\Users\yaoti\Desktop\threadpool\CReactor\CReactor\CReactor\Buffer.c(51,3): warning : conversion to ‘size_t’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+C:\Users\yaoti\Desktop\threadpool\CReactor\CReactor\CReactor\Buffer.c(51,3): warning :    memcpy(buffer->data, buffer->data + buffer->readPos, readable);
+C:\Users\yaoti\Desktop\threadpool\CReactor\CReactor\CReactor\Buffer.c(51,3): warning :    ^
+C:\Users\yaoti\Desktop\threadpool\CReactor\CReactor\CReactor\Buffer.c(60,55): warning : conversion to ‘size_t’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+C:\Users\yaoti\Desktop\threadpool\CReactor\CReactor\CReactor\Buffer.c(60,55): warning :    void* temp = realloc(buffer->data, buffer->capacity + size);
+C:\Users\yaoti\Desktop\threadpool\CReactor\CReactor\CReactor\Buffer.c(60,55): warning :                                                        ^
+C:\Users\yaoti\Desktop\threadpool\CReactor\CReactor\CReactor\Buffer.c(66,3): warning : conversion to ‘size_t’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+C:\Users\yaoti\Desktop\threadpool\CReactor\CReactor\CReactor\Buffer.c(66,3): warning :    memset(temp + buffer->capacity, 0, size);
+C:\Users\yaoti\Desktop\threadpool\CReactor\CReactor\CReactor\Buffer.c(66,3): warning :    ^
+C:\Users\yaoti\Desktop\threadpool\CReactor\CReactor\CReactor\Buffer.c(94,2): warning : conversion to ‘size_t’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+C:\Users\yaoti\Desktop\threadpool\CReactor\CReactor\CReactor\Buffer.c(94,2): warning :   memcpy(buffer->data + buffer->writePos, data, size);
+C:\Users\yaoti\Desktop\threadpool\CReactor\CReactor\CReactor\Buffer.c(94,2): warning :   ^
+C:\Users\yaoti\Desktop\threadpool\CReactor\CReactor\CReactor\Buffer.c(100,19): warning : conversion to ‘int’ from ‘size_t’ may alter its value [-Wconversion]
+C:\Users\yaoti\Desktop\threadpool\CReactor\CReactor\CReactor\Buffer.c(100,19): warning :   int size = strlen(data);
+C:\Users\yaoti\Desktop\threadpool\CReactor\CReactor\CReactor\Buffer.c(100,19): warning :                    ^
+C:\Users\yaoti\Desktop\threadpool\CReactor\CReactor\CReactor\Buffer.c(112,2): warning : conversion to ‘size_t’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+C:\Users\yaoti\Desktop\threadpool\CReactor\CReactor\CReactor\Buffer.c(112,2): warning :   vec[0].iov_len = writeable;
+C:\Users\yaoti\Desktop\threadpool\CReactor\CReactor\CReactor\Buffer.c(112,2): warning :   ^
+C:\Users\yaoti\Desktop\threadpool\CReactor\CReactor\CReactor\Buffer.c(116,20): warning : conversion to ‘int’ from ‘ssize_t’ may alter its value [-Wconversion]
+C:\Users\yaoti\Desktop\threadpool\CReactor\CReactor\CReactor\Buffer.c(116,20): warning :   int result = readv(fd, vec, 2);
+C:\Users\yaoti\Desktop\threadpool\CReactor\CReactor\CReactor\Buffer.c(116,20): warning :                     ^
+C:\Users\yaoti\Desktop\threadpool\CReactor\CReactor\CReactor\Buffer.c(142,2): warning : implicit declaration of function ‘memmem’ [-Wimplicit-function-declaration]
+C:\Users\yaoti\Desktop\threadpool\CReactor\CReactor\CReactor\Buffer.c(142,2): warning :   char* ptr = memmem(buffer->data + buffer->readPos,
+C:\Users\yaoti\Desktop\threadpool\CReactor\CReactor\CReactor\Buffer.c(142,2): warning :   ^
+C:\Users\yaoti\Desktop\threadpool\CReactor\CReactor\CReactor\Buffer.c(142,14): warning : initialization makes pointer from integer without a cast [enabled by default]
+C:\Users\yaoti\Desktop\threadpool\CReactor\CReactor\CReactor\Buffer.c(142,14): warning :   char* ptr = memmem(buffer->data + buffer->readPos,
+C:\Users\yaoti\Desktop\threadpool\CReactor\CReactor\CReactor\Buffer.c(142,14): warning :               ^
+C:\Users\yaoti\Desktop\threadpool\CReactor\CReactor\CReactor\Buffer.c(154,3): warning : conversion to ‘size_t’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+C:\Users\yaoti\Desktop\threadpool\CReactor\CReactor\CReactor\Buffer.c(154,3): warning :    int count = send(socket, buffer->data + buffer->readPos, readable, MSG_NOSIGNAL);
+C:\Users\yaoti\Desktop\threadpool\CReactor\CReactor\CReactor\Buffer.c(154,3): warning :    ^
+C:\Users\yaoti\Desktop\threadpool\CReactor\CReactor\CReactor\Buffer.c(154,19): warning : conversion to ‘int’ from ‘ssize_t’ may alter its value [-Wconversion]
+C:\Users\yaoti\Desktop\threadpool\CReactor\CReactor\CReactor\Buffer.c(154,19): warning :    int count = send(socket, buffer->data + buffer->readPos, readable, MSG_NOSIGNAL);
+C:\Users\yaoti\Desktop\threadpool\CReactor\CReactor\CReactor\Buffer.c(154,19): warning :                    ^
+  正在链接对象
+  CReactor.vcxproj -> C:\Users\yaoti\Desktop\threadpool\CReactor\CReactor\CReactor\bin\x64\Debug\CReactor.out

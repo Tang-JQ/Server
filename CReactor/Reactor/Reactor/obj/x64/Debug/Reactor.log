@@ -1,0 +1,15 @@
+﻿  正在验证源
+  正在将源远程复制到“192.168.211.128”
+  正在验证体系结构
+  正在验证体系结构
+  正在启动远程生成
+  正在编译源:
+  ThreadPool.c
+C:\Users\yaoti\Desktop\threadpool\CReactor\Reactor\Reactor\ThreadPool.c(12,70): warning : conversion to ‘long unsigned int’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+C:\Users\yaoti\Desktop\threadpool\CReactor\Reactor\Reactor\ThreadPool.c(12,70): warning :      pool->workerThreads = (struct WorkerThread*)malloc(sizeof(struct WorkerThread) * count);
+C:\Users\yaoti\Desktop\threadpool\CReactor\Reactor\Reactor\ThreadPool.c(12,70): warning :                                                                       ^
+C:\Users\yaoti\Desktop\threadpool\CReactor\Reactor\Reactor\ThreadPool.c(46,21): warning : operation on ‘pool->index’ may be undefined [-Wsequence-point]
+C:\Users\yaoti\Desktop\threadpool\CReactor\Reactor\Reactor\ThreadPool.c(46,21): warning :          pool->index = ++pool->index % pool->threadNum;
+C:\Users\yaoti\Desktop\threadpool\CReactor\Reactor\Reactor\ThreadPool.c(46,21): warning :                      ^
+  正在链接对象
+  Reactor.vcxproj -> C:\Users\yaoti\Desktop\threadpool\CReactor\Reactor\Reactor\bin\x64\Debug\Reactor.out
